@@ -1,0 +1,51 @@
+// main: ../style.less
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+    @media (max-width: 991px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.about__content {
+    width: 49%;
+    max-width: 536px;
+    @media (max-width: 991px) {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
+
+.about__title {
+    font-family: 'OpenSans SemiBold';
+    font-size: 5.4rem;
+    color: #293949;
+    margin-bottom: 4rem;
+    @media (max-width: 425px) {
+        font-size: 3rem;
+    }
+}
+
+.about__text {
+    font-family: 'OpenSans Regular';
+    font-size: 1.6rem;
+    line-height: 1.25;
+    text-align: justify;
+    color: #000000;
+}
+
+.about__img {
+    width: 49%;
+    @media (max-width: 991px) {
+        width: 100%;
+        & img {
+            margin: 0 auto;
+        }
+    }
+}

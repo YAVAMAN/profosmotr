@@ -1,0 +1,160 @@
+// main: ../style.less
+.modal-mask {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: fade(black, 50%);
+    padding: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10002;
+    &.active {
+        display: block;
+    }
+    @media (max-width: 648px) {
+        padding: 1rem;
+    }
+}
+
+.modal {
+    width: 100%;
+    max-width: 1072px;
+    padding: 6rem 3rem;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+    opacity: 0;
+    position: relative;
+    transition: all 0.2s linear;
+    @media (max-width: 648px) {
+        padding: 6rem 1.5rem;
+    }
+}
+
+.modal__title {
+    font-family: 'OpenSans SemiBold';
+    font-size: 5.4rem;
+    text-align: center;
+    color: #293949;
+    margin-bottom: 2rem;
+    @media (max-width: 425px) {
+        font-size: 3rem;
+    }
+}
+
+.modal__subtitle {
+    width: 100%;
+    max-width: 592px;
+    font-family: 'OpenSans Regular';
+    font-size: 14px;
+    line-height: 1.35;
+    text-align: center;
+    color: #293949;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+
+.modal__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.1rem 4.5rem 1.6rem;
+    @media (max-width: 648px) {
+        padding: 2.1rem 1.5rem 1.6rem;
+    }
+}
+
+.modal__item-title1 {
+    font-family: 'OpenSans SemiBold';
+    font-size: 2.4rem;
+    color: #000000;
+    @media (max-width: 478px) {
+        font-size: 1.6rem;
+    }
+}
+
+.modal__item-link {
+    font-family: 'OpenSans Regular';
+    font-size: 1.4rem;
+    text-decoration: underline;
+    color: #000000;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.modal__item-num {
+    font-family: 'OpenSans Regular';
+    font-size: 1.6rem;
+    color: #000000;
+    margin-left: -2.2rem;
+    margin-right: 2.2rem;
+    @media (max-width: 478px) {
+        font-size: 1.4rem;
+    }
+}
+
+.modal__item-title {
+    width: 100%;
+    max-width: 728px;
+    font-family: 'OpenSans Regular';
+    font-size: 1.6rem;
+    line-height: 1.375;
+    color: #333333;
+    margin-right: 3rem;
+    @media (max-width: 478px) {
+        font-size: 1.4rem;
+    }
+}
+
+.modal__item-price {
+    font-family: 'OpenSans SemiBold';
+    font-size: 1.8rem;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.modal hr {
+    width: 100%;
+    height: 1px;
+    background: #F2F2F2;
+}
+
+.modal-close {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    transition: all 0.2s linear;
+    &:hover {
+        transform: rotate(90deg);
+    }
+}
+
+//Modal 2
+.modal-mask2 {
+    &.active {
+        display: flex;
+        align-items: center;
+    }
+}
+.modal2 {
+    text-align: center;
+}
+
+.modal__btn {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    font-family: 'OpenSans Regular';
+    font-size: 2.4rem;
+    text-decoration-line: underline;
+    color: #293949;
+    & img {
+        margin-right: 2rem;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}

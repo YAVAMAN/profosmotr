@@ -1,0 +1,58 @@
+// main: ../style.less
+
+.attention {
+    margin: 5rem 0;
+    background: url('../img/attention-bg.jpg') center no-repeat;
+    background-size: cover;
+    @media (max-width: 425px) {
+        margin: 0;
+    }
+}
+
+.attention__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8.5rem 0 10.5rem;
+    text-align: center;
+}
+
+.attention__title {
+    font-family: 'OpenSans SemiBold';
+    font-size: 5.4rem;
+    color: #FFFFFF;
+    margin-bottom: 3.5rem;
+    @media (max-width: 425px) {
+        font-size: 3rem;
+    }
+}
+
+.attention__text {
+    width: 100%;
+    max-width: 505px;
+    font-family: 'OpenSans Regular';
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: #F2F2F2;
+    margin-bottom: 4.3rem;
+}
+
+.attention__contacts a {
+    font-family: 'OpenSans SemiBold';
+    font-size: 2.4rem;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    transition: all 0.2s linear;
+    &:hover {
+        text-shadow: 2px 2px 5px black;
+    }
+    & + a {
+        margin-left: 2rem;
+    }
+    @media (max-width: 425px) {
+        font-size: 1.6rem;
+        & + a {
+            margin-left: 1rem;
+        }
+    }
+}

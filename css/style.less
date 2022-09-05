@@ -1,0 +1,31 @@
+/* Blocks */
+@import "blocks/reset";
+@import "blocks/fonts";
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/ref";
+@import "blocks/b2b";
+@import "blocks/attention";
+@import "blocks/about";
+@import "blocks/clients";
+@import "blocks/footer";
+@import "blocks/menu";
+@import "blocks/modal";
+
+/* Settings */
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1366px;
+
+    padding: 0 7.5rem;
+    margin: 0 auto;
+    @media (max-width: 1024px) {
+        padding: 0 1.5rem;
+    }
+}
